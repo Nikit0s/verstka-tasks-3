@@ -8,11 +8,201 @@
     <body>
         <!-- Поле для фильтрации по городу -->
         <input
+            class="search"
             type="text"
             placeholder="Город отправления"
             value=""
             onkeyup="this.setAttribute('value', this.value)">
-
         <!-- Здесь применять вашу самую сильную магию -->
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Тип рейса</th>
+                    <th>Номер рейса</th>
+                    <th>Авиакомпания</th>
+                    <th>Логотип</th>
+                    <th>Судно</th>
+                    <th>Аэропорт</th>
+                    <th>Время</th>
+                    <th>Терминал</th>
+                    <th>Статус</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Вылет</td>
+                    <td>481516</td>
+                    <td>S7 Airlines</td>
+                    <td><img class='logo' src='http://www.s7.ru/images/icons-svg/S7_logo.svg'></td>
+                    <td>Boeing 747-8</td>
+                    <td>Екатеринбург</td>
+                    <td>28 октября 2015, 17:55</td>
+                    <td>B</td>
+                    <td>Регистрация</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>2342</td>
+                    <td>Аэрофлот</td>
+                    <td><img class='logo' src='http://goo.gl/Db138V'></td>
+                    <td>Boeing 747-8</td>
+                    <td>Москва</td>
+                    <td>29 октября 2015, 13:26</td>
+                    <td>B</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>481516</td>
+                    <td>S7 Airlines</td>
+                    <td><img class='logo' src='http://www.s7.ru/images/icons-svg/S7_logo.svg'></td>
+                    <td>Boeing 747-8</td>
+                    <td>Екатеринбург</td>
+                    <td>28 октября 2015, 17:55</td>
+                    <td>B</td>
+                    <td>Регистрация</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>2342</td>
+                    <td>Аэрофлот</td>
+                    <td><img class='logo' src='http://goo.gl/Db138V'></td>
+                    <td>Airbus A350 </td>
+                    <td>Екатеринбург</td>
+                    <td>29 октября 2015, 13:26</td>
+                    <td>B</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td>Прилет</td>
+                    <td>481516</td>
+                    <td>S7 Airlines</td>
+                    <td><img class='logo' src='http://www.s7.ru/images/icons-svg/S7_logo.svg'></td>
+                    <td>Boeing 747-8</td>
+                    <td>Екатеринбург</td>
+                    <td>28 октября 2015, 17:55</td>
+                    <td>B</td>
+                    <td>Приземлился</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>2342</td>
+                    <td>Аэрофлот</td>
+                    <td><img class='logo' src='http://goo.gl/Db138V'></td>
+                    <td>Boeing 747-8</td>
+                    <td>Санкт-Петербург</td>
+                    <td>29 октября 2015, 13:26</td>
+                    <td>A</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>481516</td>
+                    <td>S7 Airlines</td>
+                    <td><img class='logo' src='http://www.s7.ru/images/icons-svg/S7_logo.svg'></td>
+                    <td>Airbus A350 </td>
+                    <td>Екатеринбург</td>
+                    <td>28 октября 2015, 17:55</td>
+                    <td>B</td>
+                    <td>Регистрация</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>2342</td>
+                    <td>Аэрофлот</td>
+                    <td><img class='logo' src='http://goo.gl/Db138V'></td>
+                    <td>Boeing 747-8</td>
+                    <td>Екатеринбург</td>
+                    <td>29 октября 2015, 13:26</td>
+                    <td>C</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td>Прилет</td>
+                    <td>481516</td>
+                    <td>S7 Airlines</td>
+                    <td><img class='logo' src='http://www.s7.ru/images/icons-svg/S7_logo.svg'></td>
+                    <td>Boeing 747-8</td>
+                    <td>Пермь</td>
+                    <td>28 октября 2015, 17:55</td>
+                    <td>B</td>
+                    <td>Летит</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>2342</td>
+                    <td>Аэрофлот</td>
+                    <td><img class='logo' src='http://goo.gl/Db138V'></td>
+                    <td>Airbus A350 </td>
+                    <td>Екатеринбург</td>
+                    <td>29 октября 2015, 13:26</td>
+                    <td>A</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>481516</td>
+                    <td>S7 Airlines</td>
+                    <td><img class='logo' src='http://www.s7.ru/images/icons-svg/S7_logo.svg'></td>
+                    <td>Boeing 747-8</td>
+                    <td>Екатеринбург</td>
+                    <td>28 октября 2015, 17:55</td>
+                    <td>C</td>
+                    <td>Регистрация</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>2342</td>
+                    <td>Аэрофлот</td>
+                    <td><img class='logo' src='http://goo.gl/Db138V'></td>
+                    <td>Boeing 747-8</td>
+                    <td>Екатеринбург</td>
+                    <td>29 октября 2015, 13:26</td>
+                    <td>B</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>481516</td>
+                    <td>S7 Airlines</td>
+                    <td><img class='logo' src='http://www.s7.ru/images/icons-svg/S7_logo.svg'></td>
+                    <td>Boeing 747-8</td>
+                    <td>Москва</td>
+                    <td>28 октября 2015, 17:55</td>
+                    <td>B</td>
+                    <td>Регистрация</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>2342</td>
+                    <td>Аэрофлот</td>
+                    <td><img class='logo' src='http://goo.gl/Db138V'></td>
+                    <td>Boeing 747-8</td>
+                    <td>Екатеринбург</td>
+                    <td>29 октября 2015, 13:26</td>
+                    <td>C</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>481516</td>
+                    <td>S7 Airlines</td>
+                    <td><img class='logo' src='http://www.s7.ru/images/icons-svg/S7_logo.svg'></td>
+                    <td>Boeing 747-8</td>
+                    <td>Анкара</td>
+                    <td>28 октября 2015, 17:55</td>
+                    <td>A</td>
+                    <td>Регистрация</td>
+                </tr>
+            </tbody>
+        </table>
+        <form class='sendPhoneForm'>
+            <p>Отправить данные о рейсе на телефон</p>
+            <input type='tel' placeholder='Телефон' pattern='(\+?\d[- .]*){7,13}' required>
+            <input type='email' placeholder='e-mail' required>
+            <button type='submit'>Отправить</button>
+        </form>
+    </section>
     </body>
 </html>
