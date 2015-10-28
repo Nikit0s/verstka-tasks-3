@@ -1,14 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100&subset=latin,cyrillic);
-body {
+body
+{
     margin: 0;
     padding: 0;
 }
 
-.logo {
+.logo
+{
     width: 100px;
 }
 
-.search {
+.search
+{
     width: 400px;
     display: block;
     padding: 5px;
@@ -17,20 +20,19 @@ body {
     margin: 10px auto 0px;
 }
 
-.sendPhoneForm {
-    font-family: 'Roboto Slab', serif;
-    font-size: 16px;
-    font-weight: 600;
+.send-phone-form
+{
+    font: 600 16px 'Roboto Slab', serif;
     border: 1px solid black;
     border-radius: 5px;
     color: #000;
     margin: 10px auto 10px;
-    display: block;
     width: 400px;
     text-align: center;
 }
 
-.sendPhoneForm input {
+.send-phone-form input
+{
     width: 250px;
     display: block;
     padding: 5px;
@@ -39,46 +41,60 @@ body {
     margin: 0 auto 10px;
 }
 
-.sendPhoneForm button {
-    display: block;
-    margin: 0 auto 10px;
+
+.info-button
+{
+    visibility: hidden;
 }
 
-table {
+.send-phone-form:valid .info-button
+{
+    display: block;
+    margin: 0 auto 10px;
+    visibility: visible;
+}
+
+table
+{
     margin-bottom: 1%;
-    font-family: 'Roboto Slab', serif;
-    font-size: 14px;
+    font: 400 14px 'Roboto Slab', serif;
     width: 900px;
     margin: 10px auto 0px;
     background-color: #0c3b65;
-    border: 1px solid #000000;
+    border: 1px solid #000;
     border-spacing: 0;
     text-align: center;
     border-radius: 5px;
-    color: #CCCCFF;
+    color: #ccf;
     overflow: hidden;
     position: relative;
     z-index: 1;
 }
-th {
+
+th
+{
     padding: 5px 10px;
-    border-bottom: 1px solid #CCCCFF;
+    border-bottom: 1px solid #ccf;
     position: relative;
 }
-td {
+
+td
+{
     padding: 5px 10px;
     position: relative;
     height: 20px;
 }
 
-tr {
+tr
+{
     height: 5px;
 }
 
-td:hover::after {
+td:hover::after
+{
     content: "";
     position: absolute;
-    background-color: rgb(0, 25, 51);
+    background-color: #001933;
     left: 0;
     top: -5000px;
     height: 10000px;
@@ -86,14 +102,12 @@ td:hover::after {
     z-index: -1;
 }
 
-tr:hover {
-    background-color: rgb(0, 25, 51);
+tr:hover
+{
+    background-color: #001933;
 }
 
-tr:nth-child(odd) {
-    background-color: rgba(8,47,80, .01);
-}
-
-tr:nth-child(odd):hover {
-    background-color: rgb(0, 25, 51);
+tr:nth-child(odd)
+{
+    background-color: rgba(8,47,80, 0.01);
 }
