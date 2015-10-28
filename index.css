@@ -60,7 +60,7 @@ table
     font: 400 14px 'Roboto Slab', serif;
     width: 900px;
     margin: 10px auto 0px;
-    background-color: #0c3b65;
+    background: #0c3b65;
     border: 1px solid #000;
     border-spacing: 0;
     text-align: center;
@@ -87,14 +87,26 @@ td
 
 tr
 {
-    height: 5px;
+    position: relative;
 }
 
-td:hover::after
+tr:nth-child(odd) td::after
+{
+    content: '';
+    background: #134C80;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+tbody td:hover::after
 {
     content: "";
     position: absolute;
-    background-color: #001933;
+    background: #001933;
     left: 0;
     top: -5000px;
     height: 10000px;
@@ -102,12 +114,7 @@ td:hover::after
     z-index: -1;
 }
 
-tr:hover
+tbody tr:hover
 {
     background-color: #001933;
-}
-
-tr:nth-child(odd)
-{
-    background-color: rgba(8,47,80, 0.01);
 }
